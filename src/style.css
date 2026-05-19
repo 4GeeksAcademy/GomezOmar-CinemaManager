@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+/* Estilo para los números de fila y columna en el grid de asientos */
+.asiento-label {
+	position: absolute;
+	font-size: 0.75rem;
+	color: #334155;
+	background: rgba(255,255,255,0.85);
+	border-radius: 0.25rem;
+	padding: 0 0.25rem;
+	pointer-events: none;
+	z-index: 20;
+}
+.asiento-label.fila {
+	left: -2.2rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.asiento-label.columna {
+	top: -1.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Separación visual entre filas y columnas */
+#cine-grid {
+	position: relative;
+	margin-left: 2.5rem;
+	margin-top: 2rem;
+}
+.asiento-btn {
+	position: relative;
+}
